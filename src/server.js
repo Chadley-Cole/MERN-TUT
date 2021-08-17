@@ -16,6 +16,10 @@ app.get('/', (req, res)=> {
     res.send('Hello from Nodemon');
 })
 
+app.get('/register', (req, res)=> {
+    res.send('Hello from Register');
+})
+
 try {
     mongoose.connect(process.env.MONGO_DB_CONNECTION, {
         useNewUrlParser: true,
