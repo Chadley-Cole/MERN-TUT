@@ -10,7 +10,7 @@ module.exports = {
             if (!exsistingUser){
                 const hashPassword = await bcrypt.hash(password, 10);
 
-                const user = await User.create({
+                const user = User.create({
                     firstName:firstName, // There is short hand way as variable name is same as property for firstName, lastName and email.
                     lastName:lastName,  //You can just write the property name, e.g. firstName = firstName becomes just firstName.
                     password:hashPassword,

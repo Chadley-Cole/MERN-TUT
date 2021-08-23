@@ -6,7 +6,7 @@ routes.get('/status', (req, res)=> {
     res.send({status: 200})
 })
 
-routes.post('/users/register', UserController.createUser)
+routes.post('/user/register', UserController.createUser)
 routes.get('/users/:userId', UserController.getUserById)
 
 module.exports = routes;
